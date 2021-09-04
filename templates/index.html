@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GAME CAMP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header >
+        <div class="site-identity">
+          <a href="#"><img src="{{ url_for('static', filename='logo.jpeg')}}" alt="logo" /></a>
+        </div>  
+        <div class="navbar">
+            <a href="#footer">Contact</a>
+            <a href="#home" >Home</a>
+          </div>
+    </header>
+    <br>
+    <div id="home">
+        <h2>
+            WELCOME TO <span>&nbsp;GAME CAMP&nbsp;</span>
+        </h2>
+        <table cellspacing = 0 cellpadding =>
+            <tr>
+                <td> Flappy Bird</td>
+                <td> Snake Game</td>
+                <td>Pong Game</td>
+            </tr>
+            <tr class ="snake">
+                 <td>
+                    <img src="https://www.wired.com/images_blogs/gamelife/2014/02/title.jpg" class="rounded float-left" alt="...">
+                </td>
+                <td>
+                    <img src="https://imgs2.dab3games.com/gobble-snake-game.png" class="rounded float-left" alt="...">
+                </td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Signed_Pong_Cabinet.jpg/800px-Signed_Pong_Cabinet.jpg"  class="rounded float-right" alt="...">
+                </td>
+            </tr>
+            <tr  class="flappy">
+                <td>
+                    <button onclick="document.location='/flappy/'">Play</button>
+                </td>
+                <td>
+                    <button onclick="document.location='/snake/'">Play</button>
+                </td>
+                <td>
+                    <button onclick="document.location='/pong/'">Play</button>
+                </td>
+            </tr>
+        </table>
+            <table cellspacing = 0 cellpadding =>
+                <tr>
+                    <td> Car Crossing</td>
+                    <td> Turtle Race</td>
+                    
+                </tr>
+            <tr class="turtle">
+                <td>
+                    <img src="https://img.cdn.famobi.com/portal/html5games/images/tmp/CarCrossingTeaser.jpg?v=0.2-87fb0b97" class="rounded float-left" alt="...">
+                </td>
+                <td>
+                    <img src="https://imgs2.dab3games.com/toss-the-turtle-game.png"  class="rounded float-right" alt="...">
+                </td>
+            </tr>
+            <tr class="car">
+                <td>
+                    <button onclick="document.location='/car-crossing/'">Play</button>
+              
+                </td>
+                <td>
+                    <button onclick="document.location='/race/'">Play</button>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer id="footer">
+        <a href="https://www.linkedin.com/in/smriti-dwivedi-672549204" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/akankaku1998" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/shalu_.sharma/" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/akash159chauhan" class="fa fa-facebook"></a>
+        <br>
+        <small>&copy; Copyright 2021. All Rights Reserved.</small>
+    </footer>
+    
+</body>
+</html>
